@@ -1,0 +1,847 @@
+@charset "UTF-8";
+
+.side {
+	width: 200px;
+	text-align: center;
+}
+
+.side a {
+	color: #333;
+	text-decoration: none;
+}
+
+.side aside {
+	margin: 0;
+}
+
+.side ul li ul {
+	padding: .5em;
+	border-width: 3px;
+	border-style: solid;
+	background: #FFF;
+}
+
+.side ul li ul {
+	display: none;
+}
+
+.accrd01 {
+	border-color: #f0b265;
+}
+
+.accrd02 {
+	border-color: #f49bbb;
+}
+
+.accrd03 {
+	border-color: #a5c98c;
+}
+
+.accrd04 {
+	border-color: #60afd6;
+}
+
+.accrd05 {
+	border-color: #9ca9c9;
+}
+
+.side ul li:nth-of-type(1) p {
+	background: #f0b265
+}
+
+.side ul li:nth-of-type(2) p {
+	background: #f49bbb
+}
+
+.side ul li:nth-of-type(3) p {
+	background: #a5c98c
+}
+
+.side ul li:nth-of-type(4) p {
+	background: #60afd6
+}
+
+.side ul li:nth-of-type(5) p {
+	background: #9ca9c9
+}
+
+a.accord, a.accord2 {
+	display: block;
+	padding: 1em 0;
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+	font-size: 1.2em;
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255,
+		.7)), color-stop(25%, rgba(255, 255, 255, .5)),
+		color-stop(100%, rgba(255, 255, 255, 0)));
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: -ms-linear-gradient(left, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ffffff', GradientType=1);
+	cursor: pointer
+}
+
+a.accord2 {
+	font-size: 1em;
+	padding: 1.2em 0
+}
+
+a.accord:hover, a.accord2:hover {
+	background: none;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4)
+}
+
+.side ul li ul li {
+	margin-bottom: 5px
+}
+
+.side ul li ul li a {
+	display: block;
+	width: 170px;
+	height: 30px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.side .accrd01 a {
+	text-indent: -999em;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	transition: 0s;
+}
+
+.side ul li ul li a:hover {
+	background-position: bottom;
+	box-shadow: 1px 1px 2px #ccc, -1px 1px 2px #ccc, -1px -1px 2px #ccc, 1px
+		-1px 2px #ccc
+}
+/*
+li.canclini a{background-image:url(../img/sidenav/bnr_canclini.jpg);}
+li.albini a{background-image:url(../img/sidenav/bnr_albini.jpg);}
+li.tmason a{background-image:url(../img/sidenav/bnr_thomasmason.jpg);}
+li.alumo a{background-image:url(../img/sidenav/bnr_alumo.jpg);}
+li.albiate a{background-image:url(../img/sidenav/bnr_albiate.jpg);}
+li.anteks a{background-image:url(../img/sidenav/bnr_anteks.jpg);}
+li.soktas a{background-image:url(../img/sidenav/bnr_soktas.jpg);}
+li.testa a{background-image:url(../img/sidenav/bnr_testa.jpg);}
+li.somelos a{background-image:url(../img/sidenav/bnr_somelos.jpg);}
+li.oltolina a{background-image:url(../img/sidenav/bnr_oltolina.jpg);}
+li.getzner a{background-image:url(../img/sidenav/bnr_getzner.jpg);}
+li.honegger a{background-image:url(../img/sidenav/bnr_honegger.jpg);}
+li.acorn a{background-image:url(../img/sidenav/bnr_acorn.jpg);}
+li.djohn a{background-image:url(../img/sidenav/bnr_djanderson.jpg);}
+li.grandi a{background-image:url(../img/sidenav/bnr_grandi.jpg);}
+li.ferno a{background-image:url(../img/sidenav/bnr_ferno.jpg);}
+li.carlo a{background-image:url(../img/sidenav/bnr_carloriva.jpg);}
+li.seais a{background-image:url(../img/sidenav/bnr_seaisland.jpg);}
+li.oimport a{background-image:url(../img/sidenav/bnr_others_import.jpg);}
+li.giza a{background-image:url(../img/sidenav/bnr_giza.jpg);}
+li.others a{background-image:url(../img/sidenav/bnr_others.jpg);}
+li.brembana a{background-image:url(../img/sidenav/bnr_brembana.jpg);}
+*/
+.accrd02 a, .accrd03 a {
+	text-align: left;
+}
+
+.accrd02 img, .accrd03 img {
+	margin-right: 1em;
+	vertical-align: middle
+}
+
+.accrd04 a {
+	border-left: 2px #666 solid;
+	border-bottom: 1px #666 solid;
+}
+
+.accrd04 a b {
+	font-size: 1.4em;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3",
+		"Hiragino Mincho Pro", serif;
+	font-weight: bold;
+}
+
+/*--banner--*/
+ul.banner {
+	margin: .5em auto;
+	padding: 0;
+}
+
+ul.banner li {
+	margin: 2px auto;
+	padding: 0;
+	line-height: 0;
+}
+
+ul+ul.banner li {
+	border: 1px #999 solid;
+}
+
+ul+ul.banner li img {
+	width: 198px
+}
+
+ul.banner li a {
+	display: block;
+}
+
+.banner:not (:first-child ) li {
+	border: 1px #999 solid;
+}
+
+.banner:not (:first-child ) li img {
+	width: 198px;
+}
+
+/*----*/
+article {
+	margin: 0 auto 2em;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+		Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+article h2 {
+	font-size: 1.5em;
+	color: #000;
+}
+
+article h2:before {
+	content: "\25a0";
+	font-size: 1.5em;
+	position: relative;
+	top: 4px;
+}
+
+.newkiji div {
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	/* -webkit-justify-content: space-between; /* Safari */
+	/*justify-content:         space-between;*/
+	-webkit-flex-wrap: wrap; /* safari */
+	flex-wrap: wrap
+}
+
+.newkiji a {
+	color: #333;
+	text-decoration: none;
+}
+
+.newkiji dl {
+	width: 32%;
+	border: 1px #CCC solid;
+	font-size: 1em;
+	margin: 0 1em 1em 0;
+	position: relative
+}
+
+.newkiji dl:nth-of-type(3n) {
+	margin-right: 0
+}
+
+.newkiji dl:hover {
+	background: #fefefe
+}
+
+.newkiji dt {
+	position: relative;
+	line-height: 0;
+
+}
+
+.newkiji dt span {
+	height: 3em;
+	width: 3em;
+	text-align: center;
+	padding: .5em 0;
+	color: #FFF;
+	background: #F33;
+	border-radius: 50%;
+	position: absolute;
+	line-height: 30px;
+	font-size: .9em;
+	top: 10px;
+	right: 10px;
+}
+
+.newkiji dd {
+	padding: 1em;
+	line-height: 1.4em;
+	position: relative;
+	height: 200px;
+}
+
+.newkiji dd h3 {
+	font-size: 1.2em;
+	margin: 0 auto .5em;
+	font-weight: bold
+}
+
+.newkiji dd p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.newkiji dd p.tube {
+	padding-left: 45px;
+	background: url(../img/tube.jpg) left no-repeat;
+	margin: .5em auto;
+	font-size: .9em
+}
+
+.newkiji dd+dd {
+	border-top: 1px #CCC solid;
+	bottom: 0;
+	left: 0;
+	padding: .5em 0;
+	font-size: .9em;
+	text-align: center;
+	height: 2.5em;
+}
+
+/*--cart--*/
+article.cart h2 {
+	font-size: 1.5em;
+	color: #000;
+	padding: .5em;
+	text-align: center;
+	background: #f0f0f0;
+	border-bottom: 1px #CCC solid;
+}
+
+article.cart h1 {
+	text-align: center;
+}
+
+dl.kijilist {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.kijilist dt {
+	color: #FFF;
+	background: #333;
+	padding: 1em 1em 1em 10em;
+	position: relative;
+}
+
+.kijilist dt button {
+	position: absolute;
+	left: 0;
+	top: 25%
+}
+
+.kijilist dd {
+	background: #ddd;
+	text-align: right;
+	margin-bottom: 5px;
+	padding: .5em 0;
+	border-bottom: 1px #666 solid
+}
+
+.kijilist dt:last-child {
+	border-bottom: none;
+}
+
+.kijilist button {
+	padding: 4px 10px;
+	background: none;
+	curssor: pointer;
+	margin: 0 1em;
+	font-size: 1em;
+	background: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px
+}
+
+.kijilist button[type="submit"] {
+	border: 1px solid #39F;
+	color: #39F;
+}
+
+.kijilist button[type="submit"]:hover {
+	background: #39F;
+	color: #FFF;
+}
+
+.kijilist button[type="reset"] {
+	border: 1px solid #999;
+	color: #666;
+	font-size: .9em
+}
+
+.kijilist button[type="reset"]:hover {
+	background: #999;
+	color: #FFF;
+}
+
+.contbtn {
+	text-align: center;
+	margin: 1em auto 2em;
+}
+
+.contbtn button {
+	border: 1px #F93 solid;
+	color: #F93;
+	font-size: 1.2em;
+	padding: .5em 1em;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	cursor: pointer
+}
+
+.contbtn button:hover {
+	background: #F93;
+	color: #FFF;
+}
+
+.cart .order ul {
+	text-align: center;
+	width: 91%;
+	margin: 1em auto
+}
+
+.cart .order li {
+	display: inline;
+}
+
+.cart .order li a {
+	display: block;
+	line-height: 1;
+	float: left;
+	margin: 5px
+}
+
+.cart .order li a:hover img {
+	position: relative;
+	top: 1px;
+}
+
+/*--detail--*/
+article.detail h2 {
+	line-height: 1.4em;
+}
+
+div.box, .tubebox, .txtbox {
+	border-bottom: 1px #999 dotted;
+	padding: 2em 0
+}
+
+h2+div.box {
+	border-top: 1px #999 dotted;
+}
+
+div.box figure {
+	width: 80%;
+	margin: 1em auto;
+}
+
+ul.glry {
+	width: 80%;
+	margin: 0 auto;
+	letter-spacing: -.4em
+}
+
+.glry li {
+	display: inline-block;
+	width: 24%;
+	letter-spacing: normal;
+	margin: 0 0.5%
+}
+
+p.tube {
+	padding-left: 45px;
+	background: url(../img/tube.jpg) left no-repeat;
+	margin: .5em auto;
+}
+
+.box h3 {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.tubebox {
+	text-align: center;
+}
+
+.box table {
+	border-collapse: collapse;
+	margin: 1em auto;
+	border-top: 1px #666 solid;
+	border-left: 1px #666 solid;
+	width: 88%
+}
+
+.box table th, .box table td {
+	padding: .5em 1em;
+	border-right: 1px #666 solid;
+	border-bottom: 1px #666 solid;
+}
+
+.box table th {
+	background: #f0f0f0;
+	width: 25%;
+	vertical-align: middle
+}
+
+.box td strong {
+	font-weight: bold;
+	display: block;
+}
+
+.blue {
+	color: #06F;
+}
+
+.red {
+	color: #F33;
+}
+
+.kijisize {
+	display: inline-table;
+	margin: 0 .5em;
+	width: 55%
+}
+
+.kijisize li {
+	display: table-cell;
+	width: 20%;
+	font-size: .7em;
+	text-align: center;
+	vertical-align: middle
+}
+
+.kijisize li:after {
+	content: "";
+	display: block;
+	width: 95%;
+	height: 1em;
+	margin: 0 auto;
+	border: 1px #999 solid;
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
+		255, 1)), color-stop(47%, rgba(246, 246, 246, 1)),
+		color-stop(100%, rgba(237, 237, 237, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=0);
+}
+
+.kijisize li.add:after {
+	background: background: rgba(252, 252, 252, 1);
+	background: -moz-linear-gradient(top, rgba(252, 252, 252, 1) 0%,
+		rgba(142, 207, 242, 1) 47%, rgba(64, 175, 235, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252, 252,
+		252, 1)), color-stop(47%, rgba(142, 207, 242, 1)),
+		color-stop(100%, rgba(64, 175, 235, 1)));
+	background: -webkit-linear-gradient(top, rgba(252, 252, 252, 1) 0%,
+		rgba(142, 207, 242, 1) 47%, rgba(64, 175, 235, 1) 100%);
+	background: -o-linear-gradient(top, rgba(252, 252, 252, 1) 0%,
+		rgba(142, 207, 242, 1) 47%, rgba(64, 175, 235, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(252, 252, 252, 1) 0%,
+		rgba(142, 207, 242, 1) 47%, rgba(64, 175, 235, 1) 100%);
+	background: linear-gradient(to bottom, rgba(252, 252, 252, 1) 0%,
+		rgba(142, 207, 242, 1) 47%, rgba(64, 175, 235, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc',
+		endColorstr='#40afeb', GradientType=0);
+	border: 1px #39C solid
+}
+
+.t_c {
+	text-align: center;
+}
+
+.txtbox h4 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.txtbox h4:before {
+	content: "\25a0";
+	font-size: 1.5em;
+	position: relative;
+	top: 4px;
+}
+
+.txtbox p {
+	margin: 1em auto 2em
+}
+
+.txtbox .f_r {
+	float: right;
+	margin-left: 1em;
+}
+
+.cartbox {
+	padding: 1em 0;
+	border-bottom: 1px #999 solid;
+	position: relative
+}
+
+.cartbox h3 {
+	font-size: 1.2em;
+	background: #f0f0f0;
+	border-bottom: 1px #ccc solid;
+	padding: .5em;
+	margin-bottom: 1em;
+}
+
+.cartbox h3+p, .cartbox font+p {
+	padding: .4em .5em;
+	border: 1px #999 solid;
+	position: absolute;
+	top: 1.2em;
+	right: 1em;
+	background: #FFF;
+}
+
+.cartbox font[size="+1"] {
+	padding: 1em;
+}
+
+.cartbox p.t_c {
+	width: 40%;
+	margin: 0 auto;
+	padding: .5em;
+	border: 1px #F60 solid;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	background: rgba(241, 231, 103, 1);
+	background: -moz-linear-gradient(top, rgba(241, 231, 103, 1) 0%,
+		rgba(254, 182, 69, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241, 231,
+		103, 1)), color-stop(100%, rgba(254, 182, 69, 1)));
+	background: -webkit-linear-gradient(top, rgba(241, 231, 103, 1) 0%,
+		rgba(254, 182, 69, 1) 100%);
+	background: -o-linear-gradient(top, rgba(241, 231, 103, 1) 0%,
+		rgba(254, 182, 69, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(241, 231, 103, 1) 0%,
+		rgba(254, 182, 69, 1) 100%);
+	background: linear-gradient(to bottom, rgba(241, 231, 103, 1) 0%,
+		rgba(254, 182, 69, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767',
+		endColorstr='#feb645', GradientType=0);
+	color: #06C;
+	margin: 1em auto
+}
+
+.cartbox ul {
+	width: 70%;
+	margin: 2em auto;
+	text-align: center
+}
+
+.cartbox li {
+	text-align: center;
+	display: inline-table;
+}
+
+.cartbox button, .cartbox a {
+	padding: .5em 1em;
+	font-size: 1.2em;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	line-height: 1.2em;
+	background: #FFF;
+	cursor: pointer
+}
+
+.cartbox button {
+	border-color: #F93;
+	color: #F93;
+	font-size: 1.4em
+}
+
+.cartbox a {
+	border-color: #39F;
+	color: #39F;
+	text-decoration: none
+}
+
+.cartbox button:hover {
+	background: #F93;
+	color: #FFF
+}
+
+.cartbox a:hover {
+	background: #39F;
+	color: #FFF
+}
+
+.cartbox li span {
+	display: block;
+	padding: .8em;
+	background: #0C6;
+	color: #FFF;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+.cartbox li button span {
+	display: inherit;
+	background: none;
+	padding: 0;
+	color: #F93
+}
+
+.cartbox li button:hover span {
+	color: #FFF;
+}
+
+figure.empty {
+	width: 100%;
+	text-align: center;
+	margin: 2em auto 0;
+}
+
+.empty figcaption {
+	display: block;
+	border-bottom: 1px #F93 solid;
+	padding: .5em;
+	font-size: 1.5em;
+	color: #F93;
+	margin: 1em auto 0
+}
+
+@media screen and (max-width: 480px) {
+	.side {
+		background: #cbcbcb;
+		width: 100%;
+		text-align: center;
+	}
+	.side aside {
+		width: 95%;
+		margin: .5em auto;
+		max-width: 460px
+	}
+	.side ul li {
+		width: 50%;
+		float: left
+	}
+	.side ul li li {
+		width: 100%;
+		float: none
+	}
+	.side ul li:nth-of-type(2n+1) {
+		clear: both;
+	}
+
+	/*--list--*/
+	.newkiji dl {
+		width: 100%;
+		margin-right: 0
+	}
+	.newkiji dd+dd {
+		padding: .5em;
+		font-size: 1em;
+		text-align: center;
+		height: 2.5em;
+	}
+
+	/*--banner--*/
+	ul.banner:first-child li {
+		width: 100%;
+	}
+	ul.banner:first-child li img {
+		width: 80%;
+	}
+
+	/*--detail--*/
+	div.box, .tubebox, .txtbox {
+		padding: 1em 0
+	}
+	div.box figure {
+		width: 100%;
+		margin: 1em auto;
+	}
+	ul.glry {
+		width: 100%;
+	}
+	/*.glry li{display:inline-table; width:24%}*/
+	p.tube {
+		padding-left: 45px;
+		background: url(../img/tube.jpg) left no-repeat;
+		margin: .5em auto;
+	}
+	.box h3 {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	.tubebox {
+		text-align: center;
+	}
+	.box table {
+		width: 100%
+	}
+	.box table th, .box table td {
+		padding: .5em 1em;
+		border-right: 1px #666 solid;
+		border-bottom: 1px #666 solid;
+	}
+	.box table th, .box table td {
+		display: block;
+		width: 100%
+	}
+	.kijisize {
+		width: 100%;
+		margin: 0
+	}
+	.txtbox .f_r {
+		float: none;
+		margin-left: 0;
+		width: 100%
+	}
+	.cartbox h3 {
+		margin-bottom: .5em;
+	}
+	.cartbox h3+p, .cartbox font+p {
+		border: none;
+		border-bottom: 1px #999 solid;
+		position: relative;
+		top: inherit;
+		right: inherit;
+		margin-bottom: 1em;
+		text-align: right
+	}
+	.cartbox p.t_c {
+		width: 100%;
+	}
+	.cartbox ul, .cartbox button {
+		width: 100%;
+	}
+	.cartbox li {
+		display: block;
+		margin: 0 auto 1em
+	}
+	.cartbox a {
+		display: block
+	}
+}

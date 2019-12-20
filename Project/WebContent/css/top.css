@@ -1,0 +1,566 @@
+@charset "UTF-8";
+
+article {
+	margin: 0 auto 2em;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+		Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+article h2 {
+	font-size: 1.5em;
+	color: #000;
+}
+
+article h2:before {
+	content: "\25a0";
+	font-size: 1.5em;
+	position: relative;
+	top: 4px;
+}
+
+.newkiji div {
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	-webkit-justify-content: space-between; /* Safari */
+	justify-content: space-between;
+}
+
+.newkiji a {
+	color: #333;
+	text-decoration: none;
+}
+
+.newkiji dl {
+	width: 24%;
+	border: 1px #CCC solid;
+	font-size: 1em;
+	position: relative
+}
+
+.newkiji dl:hover {
+	background: #fefefe
+}
+
+.newkiji dt {
+	position: relative;
+	line-height: 0;
+}
+
+.newkiji dt span {
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding: .5em 0;
+	color: #FFF;
+	background: #F33;
+	border-radius: 50%;
+	position: absolute;
+	line-height: 30px;
+	font-size: .9em;
+	top: 10px;
+	right: 10px;
+}
+
+.newkiji dd {
+	padding: 1em;
+	line-height: 1.4em;
+	position: relative;
+	height: 200px;
+}
+
+.newkiji dd h3 {
+	font-size: 1.2em;
+	margin: 0 auto .5em;
+	font-weight: bold
+}
+
+.newkiji dd p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.newkiji dd p.tube {
+	padding-left: 45px;
+	background: url(../img/tube.jpg) left no-repeat;
+	margin: .5em auto;
+	font-size: .9em
+}
+
+.newkiji dd+dd {
+	border-top: 1px #CCC solid;
+	bottom: 0;
+	left: 0;
+	padding: .5em 0;
+	font-size: .9em;
+	text-align: center;
+	height: 2.5em;
+}
+
+.newkiji dd+dd.soldout {
+	position: absolute;
+	transform: rotate(-15deg);
+	background: #fff;
+	top: 60%;
+	left: 15%;
+	border: 1px #f00 solid;
+}
+
+/*--tside--*/
+.tside aside {
+	margin: 1em auto;
+	text-align: center
+}
+
+.tside a {
+	color: #333;
+	text-decoration: none;
+}
+
+.tside ul {
+	display: inline-table;
+}
+
+.tside ul li {
+	width: 240px;
+	display: table-cell
+}
+
+.tside ul li ul {
+	padding: .5em 0;
+	border-width: 3px;
+	border-style: solid;
+	background: #FFF;
+	box-sizing: border-box;
+	width: 240px
+}
+
+.tside ul li ul li {
+	display: block;
+}
+
+.tside ul li ul {
+	display: none;
+}
+
+.accrd01 {
+	border-color: #f0b268;
+}
+
+.accrd02 {
+	border-color: #f49bbb;
+}
+
+.accrd03 {
+	border-color: #a5c98c;
+}
+
+.accrd04 {
+	border-color: #60afd6;
+}
+
+.accrd05 {
+	border-color: #9ca9c9;
+}
+
+p.5toori {
+	margin: 50px 50px;
+}
+
+.tside ul li:nth-of-type(1) p {
+	background: #f0b265
+}
+
+.tside ul li:nth-of-type(2) p {
+	background: #f49bbb
+}
+
+.tside ul li:nth-of-type(3) p {
+	background: #a5c98c
+}
+
+.tside ul li:nth-of-type(4) p {
+	background: #60afd6
+}
+
+.tside ul li:nth-of-type(5) p {
+	background: #9ca9c9
+}
+
+a.accord, a.accord2 {
+	display: block;
+	padding: 1em 0;
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+	font-size: 1.2em;
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255, 255,
+		255, .7)), color-stop(25%, rgba(255, 255, 255, .5)),
+		color-stop(100%, rgba(255, 255, 255, 0)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%,
+		rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ffffff', GradientType=0);
+	cursor: pointer;
+}
+
+a.accord:hover, a.accord2:hover {
+	background: none;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+
+.tside ul li ul li {
+	margin-bottom: 5px
+}
+
+.tside ul li ul li a {
+	display: block;
+	width: 170px;
+	height: 30px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.tside .accrd01 a {
+	text-indent: -999em;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	transition: 0s;
+}
+
+.tside ul li ul li a:hover {
+	background-position: bottom;
+	box-shadow: 1px 1px 2px #ccc, -1px 1px 2px #ccc, -1px -1px 2px #ccc, 1px
+		-1px 2px #ccc
+}
+
+.accrd02 a, .accrd03 a {
+	text-align: left;
+}
+
+.accrd02 img, .accrd03 img {
+	margin-right: 1em;
+	vertical-align: middle
+}
+
+.accrd04 a {
+	border-left: 2px #666 solid;
+	border-bottom: 1px #666 solid;
+}
+
+.accrd04 a b {
+	font-size: 1.4em;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3",
+		"Hiragino Mincho Pro", serif;
+	font-weight: bold;
+}
+
+/*----*/
+.contents .newkiji h2 {
+	margin-top: 0;
+}
+
+/*----*/
+article.newkiji div.blog time {
+	display: block;
+	text-align: right;
+	padding-bottom: .5em;
+	border-bottom: 1px #999 dotted;
+	margin-bottom: .5em
+}
+
+article.newkiji div.blog p {
+	visibility: hidden
+}
+
+.contents .newkiji h2.mt_1 {
+	margin-top: 1em;
+}
+
+div.blog {
+	margin-bottom: 5em;
+}
+
+article.newkiji div.blog dd {
+	height: auto;
+	position: relative
+}
+
+article.newkiji div.blog dd span {
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: .5em;
+	color: #FFF;
+	background: #F33;
+	border-radius: 50%;
+	line-height: 30px;
+	font-size: .9em;
+}
+
+/*--kinkodo--*/
+.table1 {
+	width: 1200px; /* テーブルの横幅 */
+	border-collapse: collapse; /* 枠線の表示方法 */
+	border: 1px #000000 solid; /* テーブル全体の枠線（太さ・色・スタイル） */
+}
+
+.table1 TD {
+	border: 1px #000000 solid; /* セルの枠線（太さ・色・スタイル） */
+}
+
+.table2 {
+	width: 1200px; /* テーブルの横幅 */
+	border-collapse: collapse; /* 枠線の表示方法 */
+	border: 0px #000000 solid; /* テーブル全体の枠線（太さ・色・スタイル） */
+}
+
+.table2 TD {
+	border: 0px #000000 solid; /* セルの枠線（太さ・色・スタイル） */
+}
+
+td {
+	text-align: center;
+	vertical-align: top;
+}
+
+.table3 {
+	border-collapse: collapse; /* 枠線の表示方法 */
+	border: 0px #000000 solid; /* テーブル全体の枠線（太さ・色・スタイル） */
+}
+
+.table2 TD {
+	border: 0px #000000 solid; /* セルの枠線（太さ・色・スタイル） */
+}
+
+td {
+	text-align: senter;
+	vertical-align: top;
+}
+
+.relative {
+	position: relative;
+	hight: 330px;
+}
+
+.absolute {
+	position: absolute;
+	right: 100px;
+	bottom: 140px;
+}
+
+.kinfo {
+	width: 80%;
+	margin: 1em auto;
+}
+
+.kinfo_r {
+	float: right;
+	width: 22%;
+}
+
+.kinfo_l {
+	float: left;
+	width: 77%
+}
+
+.kinfo_l p {
+	text-align: left;
+}
+
+.supp ul {
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	-webkit-flex-wrap: wrap; /*--- safari（PC）用 ---*/
+	flex-wrap: wrap;
+}
+
+.supp li {
+	display: block;
+	width: 20%;
+	border: 1px #000 solid;
+	text-align: center;
+}
+
+.supp li img {
+	display: block;
+	margin: .5em auto;
+	border-bottom: 1px #000 solid
+}
+
+.supp li img+img {
+	border: none;
+}
+
+.shop_l {
+	width: 50%;
+	float: left;
+}
+
+.shop_r {
+	width: 49%;
+	margin-left: 51%;
+	text-align: left
+}
+
+.shop_r a[href^="map"] {
+	display: block;
+	margin-top: 16px;
+}
+
+.flow {
+	display: -webkit-flex; /* Safari */
+	display: flex;
+}
+
+.flow li {
+	display: block;
+	position: relative
+}
+
+.flow li a+img {
+	position: relative;
+	top: -150px
+}
+
+.flow+p {
+	margin-left: 700px;
+}
+
+@media screen and (max-width: 480px) {
+	.side {
+		background: #cbcbcb;
+		width: 100%;
+		text-align: center;
+	}
+	.side aside {
+		width: 95%;
+		margin: .5em auto;
+		max-width: 460px
+	}
+	.side ul li {
+		width: 50%;
+		float: left
+	}
+	.side ul li li {
+		width: 100%;
+		float: none
+	}
+	.side ul li:nth-of-type(2n+1) {
+		clear: both;
+	}
+	table td {
+		display: block;
+		width: 95%;
+		margin: 0 auto;
+	}
+	.newkiji div {
+		display: -webkit-flex; /* Safari */
+		display: flex;
+		-webkit-flex-wrap: wrap; /*--- safari（PC）用 ---*/
+		flex-wrap: wrap;
+		-webkit-justify-content: space-between; /* Safari */
+		justify-content: space-between;
+	}
+	.newkiji dl {
+		width: 49%;
+		border: 1px #CCC solid;
+		font-size: 1em;
+		position: relative;
+		margin-bottom: 1em;
+	}
+	.newkiji dd {
+		padding: .5em;
+		line-height: 1.2em;
+		height: auto;
+	}
+	.newkiji dd h3 {
+		font-size: 1em;
+	}
+	.newkiji dd+dd {
+		height: auto;
+	}
+	.tside ul li {
+		width: 95%;
+		display: inline-block
+	}
+	.tside ul li ul li a {
+		display: block;
+		width: 95%;
+		margin: 1em auto
+	}
+	.tside ul li ul, .tside ul li ul li {
+		width: 100%
+	}
+	.table2 {
+		width: 100%; /* テーブルの横幅 */
+	}
+	.supp ul {
+		margin: 1em auto;
+	}
+	.supp li {
+		display: block;
+		width: 50%;
+	}
+	.shop_l {
+		width: 100%;
+		float: none;
+	}
+	.shop_r {
+		width: 100%;
+		margin: 1em auto;
+	}
+	.shop_r img {
+		display: block;
+		margin: 5px auto;
+	}
+	.shop_r p {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.shop_r a[href^="map"] {
+		display: block;
+		margin: 5px auto;
+	}
+	.kinfo {
+		width: 95%;
+		margin: 1em auto;
+	}
+	.kinfo_r {
+		float: none;
+		width: 100%;
+	}
+	.kinfo_l {
+		float: none;
+		width: 95%
+	}
+	.flow {
+		-webkit-flex-wrap: wrap; /*--- safari（PC）用 ---*/
+		flex-wrap: wrap;
+	}
+	.flow li {
+		width: 45%;
+		margin-right: 15px;
+	}
+	.flow li a+img {
+		left: 54%
+	}
+	.flow+p {
+		margin: 1em auto;
+	}
+}
+
+p.5toori {
+	margin: 50px 100px;
+}
